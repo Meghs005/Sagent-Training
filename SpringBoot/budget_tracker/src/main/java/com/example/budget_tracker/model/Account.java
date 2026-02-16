@@ -1,0 +1,20 @@
+package com.example.budget_tracker.model;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
+@Entity
+@Data
+public class Account {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int aId;
+
+    private String aType;
+    private String aNo;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+}
