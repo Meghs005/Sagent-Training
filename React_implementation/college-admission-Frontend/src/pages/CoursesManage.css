@@ -1,0 +1,12 @@
+.courses-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.course-form-card { position: sticky; top: 80px; }
+
+@media (max-width: 800px) {
+  .courses-layout { grid-template-columns: 1fr; }
+  .course-form-card { position: static; }
+}

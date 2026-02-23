@@ -1,0 +1,77 @@
+.apply-page {
+  background: var(--cream);
+  min-height: calc(100vh - 64px);
+  padding: 48px 32px;
+}
+.apply-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.apply-header { margin-bottom: 32px; }
+.apply-card { animation: fadeUp 0.3s ease; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step-content {}
+.step-title-h { font-size: 22px; color: var(--forest); margin-bottom: 8px; }
+.step-desc { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.upload-area {
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  padding: 48px;
+  text-align: center;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upload-icon { font-size: 36px; margin-bottom: 8px; }
+.upload-label { color: var(--muted); font-size: 15px; }
+
+.fee-box {
+  background: var(--forest);
+  color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+}
+.fee-label { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.7; margin-bottom: 8px; }
+.fee-amount { font-family: 'DM Serif Display', serif; font-size: 48px; color: var(--gold-light); }
+
+.review-grid { display: flex; flex-direction: column; gap: 20px; }
+.review-section {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.review-label {
+  background: var(--cream);
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.review-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--cream);
+}
+.review-row:last-child { border-bottom: none; }
+.review-row span:first-child { color: var(--muted); }
+.review-row span:last-child { font-weight: 500; }
